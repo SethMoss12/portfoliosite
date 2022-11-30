@@ -17,7 +17,17 @@ h1 {
 
 p {
     margin: 0;
-    font-weight: 100;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(95, 95, 95);
+    transition: 200ms;
 }
 
 .header-area {
@@ -41,15 +51,16 @@ p {
 }
 
 section {
-    height: 500px;
     background-color: white;
-    border: solid black 1px;
+    border-bottom: #967bb6 solid 1px;
 }
 
 footer {
     height: 200px;
     text-align: center;
-    background-image: linear-gradient(rgb(173, 170, 170), rgb(51, 51, 51));
+    background-color: rgb(54, 54, 54);
+    padding-top: 80px;
+    color: white;
 }
 
 nav {
@@ -85,13 +96,100 @@ li {
     padding: 5px 0px;
 }
 
-.button:hover {
-    background-color: black;
+/* .button:hover {
+    background-color: rgb(95, 95, 95);
     transition: 200ms;
-}
+} */
 
 .button:active {
     color: black;
     background-color: white;
     transition: 100ms;
 }
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+
+}
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: none;
+    padding: 80px;
+
+}
+
+
+.headshot-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+
+.selfie {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+}
+
+
+#about-me {
+    /* text-align: justify;
+    width: 200px; */
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.project-card {
+    width: 250px;
+    height: 500px;
+    box-shadow: 5px 5px 20px 5px rgb(158, 157, 157);
+}
+
+.project-area {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-area {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+
+    .hamburger {
+        display: block;
+        border: 0px;
+        background-color: transparent;
+        color: #967bb6;
+        font-size: 30px;
+    }
+
+    .nav-ls {
+        display: none;
+    }
+}
+
+/* @media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0px;
+        background-color: transparent;
+        color: #967bb6;
+        font-size: 30px;
+    }
+
+    .nav-ls {
+        display: none;
+    }
+} */
