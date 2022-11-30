@@ -76,6 +76,7 @@ nav {
     font-size: 20px;
 }
 
+
 .logo {
     margin: -20px -40px;
     height: 200px;
@@ -95,11 +96,6 @@ li {
     font-size: 25px;
     padding: 5px 0px;
 }
-
-/* .button:hover {
-    background-color: rgb(95, 95, 95);
-    transition: 200ms;
-} */
 
 .button:active {
     color: black;
@@ -160,6 +156,11 @@ li {
     display: none;
 }
 
+.hamburger:hover {
+    color: white;
+    transition: 200ms;
+}
+
 @media only screen and (max-width: 1000px) {
     .project-area {
         display: flex;
@@ -173,23 +174,31 @@ li {
         background-color: transparent;
         color: #967bb6;
         font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
     }
 
     .nav-ls {
+        display: none;
+        background-color: #bd9ce6;
+        margin: 0px;
+    }
+
+    #navList.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #bd9ce6;
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+
+    .logo {
         display: none;
     }
 }
-
-/* @media only screen and (max-width: 1000px) {
-    .hamburger {
-        display: block;
-        border: 0px;
-        background-color: transparent;
-        color: #967bb6;
-        font-size: 30px;
-    }
-
-    .nav-ls {
-        display: none;
-    }
-} */
