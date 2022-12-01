@@ -94,8 +94,23 @@
 
 
     <footer id="contact-me">
-        <h2>Contact me</h2>
-        <p>sethmosscode@gmail.com</p>
+        <form action="https://formsubmit.co/sethmosscode@gmail.com" method="POST">
+            <div class="form-content">
+                <div class="form-input-1">
+                    <input type="text" name="name" placeholder="Name/Company" required>
+                </div>
+                <div class="form-input-2">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+
+
+                <div class="form-submit">
+                    <textarea name="email-mssge" id="email-message" cols="15" rows="5"
+                        placeholder="Your message here"></textarea>
+                    <button type="submit" class="submit-btn">Send</button>
+                </div>
+            </div>
+        </form>
     </footer>
 
     <script src="src/app.js"></script>

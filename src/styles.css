@@ -30,6 +30,30 @@ a:hover {
     transition: 200ms;
 }
 
+section {
+    background-color: white;
+    border-bottom: #967bb6 solid 1px;
+}
+
+footer {
+    height: 250px;
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    text-decoration: none;
+}
+
+input {
+    margin-right: 10px;
+}
+
 .header-area {
     display: flex;
     height: 100%;
@@ -50,23 +74,7 @@ a:hover {
     margin: 20px;
 }
 
-section {
-    background-color: white;
-    border-bottom: #967bb6 solid 1px;
-}
 
-footer {
-    height: 200px;
-    text-align: center;
-    background-color: rgb(54, 54, 54);
-    padding-top: 80px;
-    color: white;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-}
 
 .nav-ls {
     display: flex;
@@ -82,9 +90,7 @@ nav {
     height: 200px;
 }
 
-li {
-    text-decoration: none;
-}
+
 
 .button {
     width: 145px;
@@ -159,6 +165,34 @@ li {
 .hamburger:hover {
     color: white;
     transition: 200ms;
+}
+
+.form-input-1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.form-input-2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: center;
+    margin-left: 75px;
+    padding-top: 5px;
+}
+
+.submit-btn {
+    width: 80px;
+    height: 30px;
+    align-self: flex-end;
+    margin-left: 10px;
+    border-radius: 15px;
+    border: none;
 }
 
 @media only screen and (max-width: 1000px) {
