@@ -1,5 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -16,6 +18,11 @@ h1 {
 }
 
 p {
+    margin: 0;
+    font-weight: 400;
+}
+
+span {
     margin: 0;
     font-weight: 300;
 }
@@ -54,6 +61,16 @@ input {
     margin-right: 10px;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.word-content {
+    margin-left: 10px;
+}
+
 .header-area {
     display: flex;
     height: 100%;
@@ -74,8 +91,6 @@ input {
     margin: 20px;
 }
 
-
-
 .nav-ls {
     display: flex;
     width: 350px;
@@ -88,25 +103,6 @@ input {
 .logo {
     margin: -20px -40px;
     height: 200px;
-}
-
-
-
-.button {
-    width: 145px;
-    height: 30px;
-    background-color: #967bb6;
-    text-align: center;
-    border-radius: 15px;
-    margin-top: 10px;
-    font-size: 25px;
-    padding: 5px 0px;
-}
-
-.button:active {
-    color: black;
-    background-color: white;
-    transition: 100ms;
 }
 
 .sub-section {
@@ -141,8 +137,6 @@ input {
 
 
 #about-me {
-    /* text-align: justify;
-    width: 200px; */
     margin-right: 20px;
     font-size: 20px;
 }
@@ -187,12 +181,18 @@ input {
 }
 
 .submit-btn {
-    width: 80px;
+    width: 60px;
     height: 30px;
     align-self: flex-end;
     margin-left: 10px;
     border-radius: 15px;
     border: none;
+    font-size: 15px;
+}
+
+.words {
+    margin: 10px;
+    font-weight: 300;
 }
 
 @media only screen and (max-width: 1000px) {
